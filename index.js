@@ -12,14 +12,14 @@ semar.ev.on('messages.upsert', async denz => {
 if (!denz.messages) return
 msg = denz.messages[0]
 console.log(msg)
-nomorDeveloper = ['6285866295942']
+nomorDeveloper = ['6289649480987']
 semar.sendPresenceUpdate('unavailable')
 require("./semar")(semar, denz, msg)})
 
 semar.ev.on('connection.update', (update) => {
 const {connection,lastDisconnect} = update
 if (connection === 'close') {lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut ? connectKeWA() : ''}
-else if(connection === 'open') {semar.sendMessage("6285866295942@s.whatsapp.net", {text:`${JSON.stringify(update, undefined, 2)}`})}
+else if(connection === 'open') {semar.sendMessage("6289649480997@s.whatsapp.net", {text:`${JSON.stringify(update, undefined, 2)}`})}
 
 semar.ev.on('creds.update', saveState)
 console.log(update)})}	
