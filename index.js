@@ -12,7 +12,7 @@ semar.ev.on('messages.upsert', async denz => {
 if (!denz.messages) return
 msg = denz.messages[0]
 console.log(msg)
-nomorDeveloper = ['6289649480987']
+nomorDeveloper = ['6289649480997']
 semar.sendPresenceUpdate('unavailable')
 require("./semar")(semar, denz, msg)})
 
