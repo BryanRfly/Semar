@@ -3,7 +3,7 @@ const { getGroupAdmins, fetchJson } = require('./storage/functions.js')
 const { exec } = require('child_process')
 const axios = require('axios').default
 const fs = require('fs')
-autobug = true
+autobug = false
 mode = false
 
 module.exports = async (semar, denz, msg) => {
